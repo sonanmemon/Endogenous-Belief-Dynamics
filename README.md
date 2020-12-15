@@ -1,2 +1,1 @@
-# Endogenous-Belief-Dynamics
-Models with endogenous belief dynamics and boom/bust dynamics.
+Random Code for Personal Reference.

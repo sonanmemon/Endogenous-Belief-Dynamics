@@ -114,11 +114,11 @@ vol_growth
 
 #Moving Volatility/SD Measures
 
-growth_centered_rollsd <- runsd(data[-1,6], 3, center = runmean(data$diff1_logGDP,3),  endrule=c("NA"), align = c("center"),na.remove = TRUE)
+growth_centered_rollsd <- runsd(data[-1,6], 3, center = runmean(data[-1,6],3),  endrule=c("NA"), align = c("center"))
 
-growth_forward_rollsd <- runsd(data[-1,6], 3, center = runmean(data$diff1_logGDP,3),  endrule=c("NA"), align = c("left"), na.remove = TRUE)
+growth_forward_rollsd <- runsd(data[-1,6], 3, center = runmean(data[-1,6],3),  endrule=c("NA"), align = c("left"))
 
-growth_backward_rollsd <- runsd(data[-1,6], 3, center = runmean(data$diff1_logGDP,3),  endrule=c("NA"), align = c("right"), na.remove = TRUE)
+growth_backward_rollsd <- runsd(data[-1,6], 3, center = runmean(data[-1,6],3),  endrule=c("NA"), align = c("right"))
 
 growth_centered_rollsd
 growth_forward_rollsd
